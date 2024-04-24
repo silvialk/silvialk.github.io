@@ -1,6 +1,5 @@
 .drag_item {
     z-index: 101;
-    border:2px solid black;
     cursor:pointer;
     width:100px;
     height:50px;
