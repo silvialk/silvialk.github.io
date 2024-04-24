@@ -1,0 +1,52 @@
+.drag_item {
+    z-index: 101;
+    border:2px solid black;
+    background-color: lightgreen; 
+    cursor:pointer;
+    width:100px;
+    height:50px;
+    position: absolute;
+}
+
+#item1 {
+    left:600px;
+    top:100px;    
+}
+
+#item2 {
+    left:600px;
+    top:200px;    
+}
+
+#item3 {
+    left:600px;
+    top:300px;    
+}
+
+#item4 {
+    left:600px;
+    top:400px;    
+}
+
+#item5 {
+    left:600px;
+    top:500px;    
+}
+
+#drop_zone {
+    z-index: 100;
+    position:absolute;
+    left:50px;
+    top:100px;
+    border:1px solid black; 
+    cursor:pointer;
+    width:500px;
+    height:500px;
+}
+
+#content {
+    z-index: 1;
+    position: absolute;
+    left: 100px;
+    top: 175px;
+}
