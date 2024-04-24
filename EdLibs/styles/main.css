@@ -4,7 +4,7 @@
     top:0px;
     right:0px;
     width:130px;
-    height: 600px;
+    height:600px;
     background-color: #CCCCCC;
     border:2px solid black;
 }
@@ -26,17 +26,14 @@
 }
 
 #rubric3 {
-
     background-color: purple;
 }
 
 #rubric4 {
-      
     background-color: yellow;
 }
 
 #rubric5 {
-    
     background-color: pink;
 }
 
