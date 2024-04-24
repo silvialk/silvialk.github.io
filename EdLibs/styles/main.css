@@ -7,31 +7,31 @@
     position: absolute;
 }
 
-#item1 {
+#rubric1 {
     left:600px;
     top:100px;
     background-color: lightgreen; 
 }
 
-#item2 {
+#rubric2 {
     left:600px;
     top:200px;  
     background-color: lightblue; 
 }
 
-#item3 {
+#rubric3 {
     left:600px;
     top:300px;  
     background-color: lightpurple;
 }
 
-#item4 {
+#rubric4 {
     left:600px;
     top:400px;    
     background-color: yellow;
 }
 
-#item5 {
+#rubric5 {
     left:600px;
     top:500px;  
     background-color: pink;
