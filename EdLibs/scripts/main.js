@@ -23,8 +23,7 @@ drop_handler = function(ev) {
     currDragItem.style.left        = ev.clientX - left - offsetX + 'px';
     currDragItem.style.top         = ev.clientY - top - offsetY + 'px';
     
-    drop_zone_elt.appendChild(currDragItem.cloneNode(true));
-    // drop_zone_elt.appendChild(currDragItem);
+    drop_zone_elt.appendChild(currDragItem);
 };
 
 dragover_handler = function(ev) {
