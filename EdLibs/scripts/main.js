@@ -37,7 +37,7 @@ drop_handler = function(ev) {
 dragover_handler = function(ev) {
     ev.preventDefault();
 
-    if (currDragItem.classList.contains("isCopy")) {
+    if (ev.target.classList.contains("isCopy")) {
         ev.dataTransfer.dropEffect = "move";
     } else {
         ev.dataTransfer.dropEffect = "copy";
