@@ -8,11 +8,14 @@ onDragStart = function(ev) {
     offsetX = ev.clientX - rect.x;
     offsetY = ev.clientY - rect.y;
 
+    // check if this item being dragged is a copy
     if (ev.target.classList.contains("isCopy") {
+        // if it's a copy, simply move it
         currDragItem = ev.target;
     } else {
+        // dragging from the original, create a copy
         currDragItem = ev.target.cloneNode(true);
-        ev.target.classList.add("isCopy");
+        currDragItem.classList.add("isCopy");
     }
 };
 
@@ -33,5 +36,11 @@ drop_handler = function(ev) {
 
 dragover_handler = function(ev) {
     ev.preventDefault();
-    ev.dataTransfer.dropEffect = "move";
+
+    if (currDragItem.classList.contains("isCopy") {
+        ev.dataTransfer.dropEffect = "move";
+    } else {
+        ev.dataTransfer.dropEffect = "copy";
+    }
+    
 };
