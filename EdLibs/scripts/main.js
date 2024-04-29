@@ -8,7 +8,12 @@ onDragStart = function(ev) {
     offsetX = ev.clientX - rect.x;
     offsetY = ev.clientY - rect.y;
 
-    currDragItem = ev.target.cloneNode(true);
+    if (ev.target.classList.contains("isCopy") {
+        currDragItem = ev.target;
+    } else {
+        currDragItem = ev.target.cloneNode(true);
+        ev.target.classList.add("isCopy");
+    }
 };
 
 drop_handler = function(ev) {
