@@ -27,5 +27,5 @@ drop_handler = function(ev) {
 
 dragover_handler = function(ev) {
     ev.preventDefault();
-    ev.dataTransfer.dropEffect = "copy";
+    ev.dataTransfer.dropEffect = "move";
 };
