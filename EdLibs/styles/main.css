@@ -47,7 +47,7 @@
     top:100px;
     border:1px solid black; 
     cursor:pointer;
-    width:1000px;
+    width:500px;
     height:600px;
 }
 
@@ -55,6 +55,6 @@
     z-index: 1;
     position: absolute;
     left: 100px;
-    top: 175px;
+    top: 100px;
 }
 
