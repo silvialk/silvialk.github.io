@@ -8,7 +8,7 @@ onDragStart = function(ev) {
     offsetX = ev.clientX - rect.x;
     offsetY = ev.clientY - rect.y;
 
-    currDragItem = ev.target;
+    currDragItem = ev.target.cloneNode(true);
 };
 
 drop_handler = function(ev) {
