@@ -9,7 +9,7 @@ onDragStart = function(ev) {
     offsetY = ev.clientY - rect.y;
 
     // check if this item being dragged is a copy
-    if (ev.target.classList.contains("isCopy") {
+    if (ev.target.classList.contains("isCopy")) {
         // if it's a copy, simply move it
         currDragItem = ev.target;
     } else {
@@ -37,7 +37,7 @@ drop_handler = function(ev) {
 dragover_handler = function(ev) {
     ev.preventDefault();
 
-    if (currDragItem.classList.contains("isCopy") {
+    if (currDragItem.classList.contains("isCopy")) {
         ev.dataTransfer.dropEffect = "move";
     } else {
         ev.dataTransfer.dropEffect = "copy";
